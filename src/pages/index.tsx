@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Head from "next/head";
+import Navbar from "@/Components/Setcions/Navbar";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <link rel="shortcut icon" type="image/png" href="./public/images/beyondlimits-logo.png"></link>
       </Head>
       <main className="min-h-screen bg-froska-black">
-        <h2 className="font-montserrat">Hello my name is Masu</h2>
+        <Navbar/>
       </main>
     </>
 
