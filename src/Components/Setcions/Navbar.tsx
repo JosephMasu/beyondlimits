@@ -14,40 +14,41 @@ const Navbar: React.FC = () => {
   const message = 'Hello, I got this number from DreamWise web site...'; 
 
   return (
-    <nav className="b shadow-custom-light-blue sticky top-0 z-50">
+    <div className='lg:max-w-screen-378 max-w-full max-sm:px-5 max-sm:py-7 px-20 w-full h-full mx-auto py-7 max-lg:px-12a xl:px-20 2xl:px-40 min-[1700px]:px-[20rem]  sticky top-0 z-50'>
+    <nav className="flex justify-between">
       <div className="container mx-auto px-4 sm:px-8 lg:px-20 py-4 flex justify-between items-center">
         <div className="flex items-center flex-grow">
           <Link href="/" className="flex items-center">
-            <h1 className="text-dream-black font-Figtree font-light ml-2 text-xl sm:text-2xl">
-              Beyond <span className="font-bold">Limits.</span>
+            <h1 className="text-text1 font-montserrat font-light ml-2 text-xl sm:text-2xl">
+              Beyond <span className="font-bold font-montserrat text-2xl">Limits.</span>
             </h1>
           </Link>
         </div>
 
         <ul className="hidden lg:flex space-x-8 ml-auto">
           <li>
-            <button className="text-dream-black font-Figtree hover:text-gray-600 text-sm md:text-base">
+            <button className="text-dream-black font-montserrat hover:text-gray-600 text-sm md:text-base">
               About Us
             </button>
           </li>
           <li>
-            <button className="text-dream-black font-Figtree hover:text-gray-600 text-sm md:text-base">
+            <button className="text-dream-black font-montserrat hover:text-gray-600 text-sm md:text-base">
               What we do
             </button>
           </li>          <li>
-            <button className="text-dream-black font-Figtree hover:text-gray-600 text-sm md:text-base">
+            <button className="text-dream-black font-montserrat hover:text-gray-600 text-sm md:text-base">
               News
             </button>
           </li>          <li>
-            <button className="text-dream-black font-Figtree hover:text-gray-600 text-sm md:text-base">
+            <button className="text-dream-black font-montserrat hover:text-gray-600 text-sm md:text-base">
               Succes stories
             </button>
           </li>          <li>
-            <button className="text-dream-black font-Figtree hover:text-gray-600 text-sm md:text-base">
+            <button className="text-dream-black font-montserrat hover:text-gray-600 text-sm md:text-base">
               Gallery
             </button>
           </li>          <li>
-            <button className="text-dream-black font-Figtree hover:text-gray-600 text-sm md:text-base">
+            <button className="text-dream-black font-montserrat hover:text-gray-600 text-sm md:text-base">
               Cointact us
             </button>
           </li>
@@ -91,7 +92,7 @@ const Navbar: React.FC = () => {
               onClick={() => {
                 setIsOpen(false); 
               }}
-              className="text-black font-Figtree font-normal hover:text-gray-600 text-base"
+              className="text-black font-montserrat font-normal hover:text-gray-600 text-base"
             >
               About Us
             </button>
@@ -101,7 +102,7 @@ const Navbar: React.FC = () => {
               onClick={() => {
                 setIsOpen(false); 
               }}
-              className="text-black font-Figtree font-normal hover:text-gray-600 text-base"
+              className="text-black font-montserrat font-normal hover:text-gray-600 text-base"
             >
               What we do
             </button>
@@ -109,28 +110,28 @@ const Navbar: React.FC = () => {
           <li>
             <button onClick={() => {
                 setIsOpen(false); 
-              }} className="text-black font-Figtree font-normal hover:text-gray-600 text-base">
+              }} className="text-black font-montserrat font-normal hover:text-gray-600 text-base">
               News
             </button>
           </li>
           <li>
             <button onClick={() => {
                 setIsOpen(false); 
-              }} className="text-black font-Figtree font-normal hover:text-gray-600 text-base">
+              }} className="text-black font-montserrat font-normal hover:text-gray-600 text-base">
               Succes stories
             </button>
           </li>
           <li>
             <button onClick={() => {
                 setIsOpen(false); 
-              }} className="text-black font-Figtree font-normal hover:text-gray-600 text-base">
+              }} className="text-black font-montserrat font-normal hover:text-gray-600 text-base">
               Gallery
             </button>
           </li>
           <li>
             <button onClick={() => {
                 setIsOpen(false); 
-              }} className="text-black font-Figtree font-normal hover:text-gray-600 text-base">
+              }} className="text-black font-montserrat font-normal hover:text-gray-600 text-base">
               Contact us
             </button>
           </li>
@@ -140,7 +141,7 @@ const Navbar: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-            <button className="px-4 py-2 bg-bg-custom-gradient border-dream-btn-bg bg-gradient-to-b from-custom-gradient-top to-custom-gradient-bottom border-2 text-dream-black font-Figtree hover:bg-green-200 rounded-custom-sm">
+            <button className="px-4 py-2 bg-bg-custom-gradient border-dream-btn-bg bg-gradient-to-b from-custom-gradient-top to-custom-gradient-bottom border-2 text-dream-black font-montserrat hover:bg-green-200 rounded-custom-sm">
               Donate
             </button>
             </a>
@@ -148,6 +149,7 @@ const Navbar: React.FC = () => {
         </ul>
       </div>
     </nav>
+    </div>
   );
 };
 
